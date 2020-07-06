@@ -10,6 +10,7 @@ class FilesListFragment : Fragment() {
 
     companion object {
         private const val ARG_PATH : String = "com.example.file_manager.filelist.path"
+        fun build(block : Builder.() -> Unit) = Builder().apply(block).build()
     }
 
     class Builder {
